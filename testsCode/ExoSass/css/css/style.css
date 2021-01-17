@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/* ajouter des valeurs par défaut*/
+body {
+  height: 100vh;
+  background: rgba(255, 174, 0, 0.808);
+}
+
+.boxP {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: violet;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
+  height: 300px;
+}
+
+.boxE {
+  width: 100px;
+  height: 100px;
+  background: bisque;
+}
+
+.titre, .titre2 {
+  color: blue;
+  /* ça permet de rajouter le nom de la propriété + la valeur ex: bgd : blue*/
+  font-size: 50px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.titre2 {
+  letter-spacing: -5px;
+  color: violet;
+}
+
+.parent .enfant1 {
+  font-size: 30px;
+}
+.parent .enfant2 {
+  font-size: 40px;
+}
+.parent .enfant3 {
+  font-size: 50px;
+}

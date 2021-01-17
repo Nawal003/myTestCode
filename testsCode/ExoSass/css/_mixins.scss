@@ -1,0 +1,38 @@
+@mixin flexMid{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+@function add($a,$b){
+    @return $a + $b;
+}
+
+@mixin fontStuff($couleur, $valeur){
+    // color: $valeur;
+    #{$couleur}: $valeur;/* ça permet de rajouter le nom de la propriété + la valeur ex: bgd : blue*/
+}
+
+/* ajouter des valeurs par défaut*/
+@mixin positionner($fond, $x: 50%, $y: 50%) {
+    position: absolute;
+    left: $x;
+    top: $y;
+    transform: translate(-$x, -$y);// on va créer une fonction
+    background: $fond;
+    
+    @if $fond != salmon{
+        border-radius: 50%;
+    }
+    
+}
+
+@mixin enfant($desc...) {
+    @for $i from 0 to length($desc){
+        #{nth($desc, $i + 1)}{
+            font-size: 30px + $i *10;
+        }
+    }
+    
+}

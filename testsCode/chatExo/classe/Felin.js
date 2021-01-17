@@ -1,0 +1,3 @@
+class Felin{
+    typePattes ) 'coussinet '
+}

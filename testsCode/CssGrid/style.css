@@ -1,0 +1,65 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: rgb(80, 61, 51);
+    box-sizing: border-box;
+}
+.box1{
+    background: rgb(235, 227, 227);
+
+}
+.box2{background: #000;
+    
+}
+.box3{
+    background-color: rgb(233, 227, 227);
+    background-image: url(icones-Mjc/softskiiil.jpg);
+    background-repeat: no-repeat;
+    background-size: 50% 50%;
+    background-position: center;    
+    
+}
+
+.box4 {
+    background: rgb(40, 126, 25);
+}
+
+.box5{
+    background: rgb(65, 103, 173);
+}
+
+main{
+    width: 30%;
+    height: 60vh;
+    transform: translate(190%, 60%);
+    display: grid;
+    grid-column-gap: 2em;
+    grid-row-gap: 2em;
+    grid-template-columns: repeat(2, 1fr); /*responsive ajouter à la place de 2 mettre auto-fill et la,place de la 2e valeur mettre un minmax(300px, 1fr)*/
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+     "box1 box2" 
+     "box3 box4"
+     "box5 .";
+
+}
+
+.box1 {
+    grid-area: box1;
+    
+}
+.box2 {
+    grid-area: box2;
+    
+}.box3 {
+    grid-area: box3;
+    
+}
+
+.box4{
+    grid-area: box4;
+}
+
+.box5{
+    grid-area: box5;
+}

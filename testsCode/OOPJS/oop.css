@@ -1,0 +1,39 @@
+body{    
+    margin: 0;   
+    padding: 0;
+    background-color: black;
+
+}
+
+
+form{
+    padding: 5em;
+    transform: translate(50%, 30%);
+    width: 30%;
+    height: 15em;
+    border: solid 1px rgb(45, 39, 139); 
+    color: white;  
+
+}
+
+.form-control{
+    height: 5em;
+}
+
+input{
+    width: 60%;
+    margin-top: 2em;
+    height: 3em;
+    border: thin 5px blue;
+    border-radius: 1em;
+}
+
+button{
+    background-color: rgb(28, 28, 126);
+    color: white;
+    padding: 1rem;
+    margin-left: 30%;
+    border-radius: 1em;
+    margin-top: 2em;
+
+}

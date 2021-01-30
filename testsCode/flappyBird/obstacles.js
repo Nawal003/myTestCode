@@ -4,7 +4,7 @@ class Obstacle {
     constructor(){
         this.top = (Math.random() * canvas.height/3) + 30;
         this.bottom = (Math.random() * canvas.height/3) + 30;
-        this.x = canvas.width;
+        this.x = Math.random * canvas.width;
         this.width = 50;
         this.color = 'hsl(' + hue + ', 100%, 50%, 1)';
         this.counted = false;
